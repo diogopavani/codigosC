@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    int menu;
+    printf("digite 1 ate 9 para mostrar novamente o menu 0 termina o programa");
+    scanf("%d",&menu);
+
+    while(menu<=9){
+    printf("digite 1 ate 9 para mostrar novamente o menu 0 termina o programa");
+    scanf("%d",&menu);
+
+
+        if(menu<=0){
+        printf("programa finalizado");
+                    return 0;
+
+            }
+
+    }
+
+
+
+}
