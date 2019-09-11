@@ -1,23 +1,55 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
-    int menu;
-    printf("digite 1 ate 9 para mostrar novamente o menu 0 termina o programa");
-    scanf("%d",&menu);
 
-    while(menu<=9){
-    printf("digite 1 ate 9 para mostrar novamente o menu 0 termina o programa");
-    scanf("%d",&menu);
+int menu;
+int nuser;
+double n1;
+int n2;
+float elevacao;
 
+printf("digite 1 para o verificador de numero par\n\nDigite 2 para potencias\n");
+scanf("%d",&menu);
 
-        if(menu<=0){
-        printf("programa finalizado");
-                    return 0;
-
+    switch(menu)
+        {
+        case 1:
+        printf("digite um numero:\n");
+        scanf("%d",&nuser);//usuario digita um numero;
+        if(nuser%2)
+            printf("esse numero impar");
+        else
+            printf("esse numero e par");
+        break;
+        case 2:
+            printf("digite o numero");
+            scanf("%lf",&n1);
+            if(n1<0){
+            printf("numero invalido, programa reniciado !!!  \n\n\n");
+            return main();
             }
-
-    }
-
+            printf("digite o expoente");
+            scanf("%d",&n2);
+            elevacao = pow(n1, n2);
+            printf("o resultado eh %.e\n", elevacao);
+            break;
+        case 3:
+       }
 
 
 }
+/// PROGRAMA AINDA EM PRODUCAO;;;
+
+OBS PERDOA OS ERROS DE ESCOPOS!!!
+
+
+
+      // if(menu>=0){
+       // printf("programa finalizado");
+       // return 0;
+       //}
+
+
+
+
