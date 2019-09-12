@@ -28,18 +28,18 @@ float elevacao;
             }
             printf("digite o expoente");
             scanf("%d",&n2);
-            elevacao = pow(n1, n2);
+            elevacao =(float)pow(n1, n2);
             printf("o resultado eh %.e\n", elevacao);
             break;
 
         }
     }while(menu<=0);
-
+        return 0;
 
 
       // if(menu>=0){
        // printf("programa finalizado");
-return 0;
+
        //}
 
 
