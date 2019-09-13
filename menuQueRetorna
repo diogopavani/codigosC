@@ -4,10 +4,10 @@
 int main(){
                                         //estou tentando melhorar a indentacao, desculpa :(
 int menu, nuser, n2;
-double n1;
-float elevacao;
+float n1, n4, n5;
+float elevacao, raiz;
     do{
-        printf("digite 1 para o verificador de numero par\n\nDigite 2 para potencias\n");
+        printf("\n\ndigite 1 para o verificador de numero par\n\nDigite 2 para potencias\n\n\nDigite 3 para calcular a raiz de uma potencia\n\n");
         scanf("%d",&menu);
 
         switch(menu)
@@ -22,16 +22,27 @@ float elevacao;
         break;
         case 2:
             printf("digite o numero");
-            scanf("%lf",&n1);
+            scanf("%f",&n1);
                 if(n1<0){
             printf("numero invalido, programa reniciado !!!  \n\n\n");
             }
             printf("digite o expoente");
             scanf("%d",&n2);
-            elevacao =(float)pow(n1, n2);
+            elevacao =pow(n1, n2);
             printf("o resultado eh %.e\n", elevacao);
             break;
-
+        case 3:
+                        printf("digite o numero");
+            scanf("%f",&n1);
+                if(n1<0){
+            printf("numero invalido, programa reniciado !!!  \n\n\n");
+            }
+            printf("digite o expoente");
+            scanf("%d",&n2);
+            elevacao =pow(n1, n2);
+            raiz=sqrt(elevacao);
+            printf("o resultado eh %lf", raiz);
+            break;
         }
     }while(menu<=0);
         return 0;
