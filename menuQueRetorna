@@ -6,7 +6,7 @@
 
 int main() {
    //variaves;
-   unsigned char str[100], strH[200];
+   unsigned char str[100];
    int i, j;
    char nameH; //estou tentando melhorar a indentacao, desculpa :(
    int menu, nuser, n2, ano;
@@ -95,7 +95,17 @@ int main() {
          return main();
       }
 
+   case 10:
+      printf("Digite a sua mensagem: ");
+      scanf("%s", & str);
+      printf("%x", str);
+      break;
+
    }
    return 0;
 
 }
+// if(menu>=0){
+// printf("programa finalizado");
+
+//}
