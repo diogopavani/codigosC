@@ -24,6 +24,7 @@ int main() //estou tentando melhorar a indentacao, desculpa :(
     printf("__Digte 4 para saber se o ano eh bissexto__\n\n");
     printf("__Digite 5 PARA CALCULAR A SUA MEDIA PONDERADA__\n\n");
     printf("__Digite 6 para calcular a sua media de 2 notas__\n  (por favor digite de 0 a 10 )\n\n");
+    printf("__Digite 8 Para saber se um numero eh primo ou nao\n\n");
     printf("__Digite 9 para seguencia de fibonacci\n\n");
     printf("__Digite 10 para saber meu nome. e minha matricula  em hexadecimal__\n\n");
     // fim printf//
@@ -124,7 +125,16 @@ int main() //estou tentando melhorar a indentacao, desculpa :(
             printf("%d ", aux);
         }
         break;
-
+        int nprimo=0;
+    case 8:
+        printf("Digite um Numero");
+        scanf("%d", &nprimo);
+            if(nprimo%2==1){
+                printf("Esse numero eh primo");
+            }else{
+            printf("nao eh primo");
+            }
+            break;
     case 10:
         matricula = 1920027064;
         printf("Diogo Silva Pavani\n matricula: ");
