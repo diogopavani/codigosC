@@ -43,28 +43,7 @@ int main()
 
 
 //// inicio ex 3      nao consegui fazer :(/////////////////////////
-#include <stdio.h>
-#include <math.h>
-
-
-int main()
-{
-    int j=0;
-    int i=0;
-    char nome1[100];
-    char nome2[100];
-    printf("digite a primeira char de ate 100caracteres");
-    gets(nome1);
-    printf("digite a segunda char de ate 100caracteres");
-    gets(nome2);
-    for(i=0; nome1[i]='\0';i++)
-    for (j=0;nome2[j]='\0';j++)
-    if(nome1[i]==nome2[j]){
-        printf("sao iguais");
-    }else{
-        printf("sao diferentes");
-  }
-}
+printf("==SAO IGUAIS EM TODOS OS INDICES==")
 
 //// inicio ex4////////////////////////////////////
 
