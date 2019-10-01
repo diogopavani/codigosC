@@ -20,3 +20,24 @@ int main()
 //////////////////////FIM DO EX1//////////////////////////////////////
 
 
+                        /// INICIO EX2////
+
+int main()
+{
+    int i=0;
+    int cont=0;
+    int vogais=0;
+    char nome[100];
+    printf("digite um char de ate 100caracteres");
+    gets(nome);
+    for(i=0; nome[i]!='\0';i++ && i<sizeof(nome) ){
+        if(nome[i]=='a'||nome[i]=='A'||nome[i]=='e'||nome[i]=='E'||nome[i]=='i'||nome[i]=='I'||nome[i]=='o'||nome[i]=='O'||nome[i]=='u'||nome[i]=='U'){
+            vogais++;
+        }
+    }
+    printf("o numero de vogais eh: %d", vogais);
+}
+
+//////////////////////////////////////////////FIM EX2//////////////////////////////////////////////////////
+
+
